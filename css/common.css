@@ -1,0 +1,205 @@
+@charset "utf-8";
+html {
+	background: #fff;
+	overflow: auto;
+	/*max-width: 750px;
+	margin: 0 auto;*/
+}
+
+body {
+	max-width: 750px;
+	margin: 0;
+	margin: 0 auto;
+	font: 12px/18px "Microsoft Yahei";
+	color: #666;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+	outline: 0 none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+a:focus {-moz-outline-style: none;border: 0px;blr: expression(this.onFocus=this.blur());}
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+header,
+footer,
+article,
+aside,
+section,
+nav,
+menu,
+hgroup,
+details,
+dialog,
+figure,
+figcaption {
+	display: block
+}
+
+ol,
+li,
+ul,
+dl,
+dt,
+dd {
+	list-style: none;
+}
+
+fieldset,
+img {
+	border: 0
+}
+
+button,
+submit,
+input,
+select {
+	vertical-align: middle;
+}
+
+button,
+submit {
+	cursor: pointer;
+}
+
+
+/*h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: lighter;}*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+select,
+button {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	outline-style: none;
+	outline-width: 0pt;
+	padding: 0;
+	margin: 0;
+}
+
+b,
+em,
+i {
+	display: inline-block;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.container {
+	width: 1200px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+
+/*底部导航*/
+
+.footer {
+	/*height: .98rem;*/
+	position: fixed;
+	bottom: 0;
+	background: #fff;
+	width: 100%;
+	padding: .05rem 0;
+	border-top: .01rem solid #e5e5e5;
+	z-index: 20;
+	left:0;
+}
+
+.footer ul li {
+	width: 20%;
+	float: left;
+	text-align: center;
+	font-size: 0.2rem;
+}
+.footer .ico-img{
+	padding: .05rem 0;
+}
+.footer .ico-img img {
+	vertical-align: middle;
+	width: .48rem;
+	height: .48rem;
+}
+
+.footer-more {
+	height: .98rem;
+	position: relative;
+	width: 100%;
+}
+
+.footer-more img {
+	position: absolute;
+	left: 50%;
+	top: -.3rem;
+	margin-left: -.41rem;
+}
+
+.footer-more .ico-img img {
+	width: .98rem;
+	height: .98rem;
+}

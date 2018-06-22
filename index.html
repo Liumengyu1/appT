@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>教师端</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	
+	</head>
+	<body style="background: #f3f3f3;">
+		<div id="box">
+			<title></title>
+			<!--tab选项卡-->
+			<div class="index-tab clearfix">
+				<ul id="tabs">
+					<li class="active"><a href="javascript:;">KGU1025</a></li>
+					<li><a href="javascript:;">KGU1026</a></li>
+					<li><a href="javascript:;">KGU1027</a></li>
+					<li><a href="javascript:;">KGU1028</a></li>
+				</ul>
+			</div>
+			<div id="list-box">
+				<div class="list" style="display: block;">
+					<div class="main">
+						<!--班级出勤-->
+						<div class="attnd">
+							<h2 class="title clearfix"><span class="line"></span><span>班级出勤</span></h2>
+							<div class="content">
+								
+								<!--班级出勤 占位图片-->
+								<img src="img/zhanwei01.jpg" width="100%"/>
+								
+							</div>
+						</div>
+						<!--作业完成-->
+						<div class="job-complete">
+							<h2 class="title clearfix"><span class="line"></span><span>作业完成比例</span></h2>
+							<div class="content">
+								<div class="job-com-title">
+									<div class="totalNumber clearfix">
+										总人数<span class="number">35</span>
+									</div>
+								</div>
+								<div class="job-pro-box clearfix">
+									<div class="complete">
+										<p class="complete-number">26</p>
+										<p class="com-txt">完成</p>
+									</div>
+									<span></span>
+									<div class="noComplete">
+										<p class="noComplete-number">9</p>
+										<p class="com-txt">未完成</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--项目完成-->
+						<div class="project-box">
+							<h2 class="title clearfix"><span class="line"></span><span>项目完成</span></h2>					
+							<div class="project-con">
+								<div class="project-row clearfix">
+									<div class="row-left fl">
+										<div class="name">
+											<span class="bold">项目名称：</span><span>武松打虎</span>
+										</div>
+										<div class="group">
+											<span class="bold">小组：</span><span>第一组</span>
+										</div>
+										<div class="member">
+											<span class="bold">组员：</span><span>张三、李四、王五</span>
+										</div>
+									</div>
+									<div class="row-right fr">
+										<div class="item">
+										    <div class="m-progress">
+										        <div class="progress-numb">50%</div>
+										        <div class="wave" style="height: 50%"></div>
+										    </div>
+										</div>
+									</div>
+								</div>
+								
+								<div style="height: .2rem;background: #F3F3F3;"></div>
+								<div class="project-row clearfix">
+									<div class="row-left fl">
+										<div class="name">
+											<span class="bold">项目名称：</span><span>武松打虎</span>
+										</div>
+										<div class="group">
+											<span class="bold">小组：</span><span>第一组</span>
+										</div>
+										<div class="member">
+											<span class="bold">组员：</span><span>张三、李四、王五</span>
+										</div>
+									</div>
+									<div class="row-right fr">
+										<div class="item">
+										    <div class="m-progress">
+										        <div class="progress-numb">50%</div>
+										        <div class="wave" style="height: 50%"></div>
+										    </div>
+										</div>
+									</div>
+								</div>
+								<div style="height: .2rem;background: #F3F3F3;"></div>
+								<div class="project-row clearfix">
+									<div class="row-left fl">
+										<div class="name">
+											<span class="bold">项目名称：</span><span>武松打虎</span>
+										</div>
+										<div class="group">
+											<span class="bold">小组：</span><span>第一组</span>
+										</div>
+										<div class="member">
+											<span class="bold">组员：</span><span>张三、李四、王五</span>
+										</div>
+									</div>
+									<div class="row-right fr">
+										<div class="item">
+										    <div class="m-progress">
+										        <div class="progress-numb">50%</div>
+										        <div class="wave" style="height: 50%"></div>
+										    </div>
+										</div>
+									</div>
+								</div>
+								<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>	
+								<script type="text/javascript">
+									// 背景图片高度超过 100px 时，改变字体颜色
+									$(function(){
+										$('.wave').each(function() {
+									  		var $waveHeight = $(this).height();
+									    	if ($waveHeight > 100) {
+									    	    $(this).siblings().addClass('white');
+									   		}
+										});
+									})
+								</script>
+							</div>
+						
+						</div>
+						
+					</div>
+					<!--班级成绩曲线-->
+					<div class="score">
+						<h2 class="title clearfix"><span class="line"></span><span>班级出勤</span></h2>
+						<div class="score-con">
+							<!--曲线图占位-->
+							<img src="img/zhanwei03.jpg" width="100%"/>
+						</div>
+					</div>
+					
+				</div>
+				<!--切换 占位-->
+				<div class="list" style="height: 1329px;"></div>
+				<div class="list" style="height: 1329px;"></div>
+				<div class="list" style="height: 1329px;"></div>
+			</div>
+		
+			<div style="height: 1rem;"></div>
+			<div class="footer clearfix">
+				<ul>
+					<li><a href="index.html"><div class="ico-img"><img src="img/footer-img/footer-index02.png"/></div><p class="ico-txt">首页</p></a></li>
+					<li><a href="page-news.html"><div class="ico-img"><img src="img/footer-img/footer-info01.png"/></div><p class="ico-txt">消息</p></a></li>
+					<li class="footer-more"><a href=""><div class="ico-img"><img src="img/footer-img/footer-more.png"/></div></a></li>
+					<li><a href="pagr-school.html"><div class="ico-img"><img src="img/footer-img/footer-school01.png"/></div><p class="ico-txt">学校</p></a></li>
+					<li><a href="page-my.html"><div class="ico-img"><img src="img/footer-img/footer-my01.png"/></div><p class="ico-txt">我的</p></a></li>
+				</ul>
+			</div>
+		
+		</div>	
+		<script src="js/phone.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

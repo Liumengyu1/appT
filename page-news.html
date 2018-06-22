@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>消息</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<title></title>
+			<div class="news-tab clearfix">
+				<ul id="tabs">
+					<li>
+						<a href="javascript:;">
+							<div class="news-img"><img src="img/news-img/news-notice.png"/></div>
+							<div class="news-txt">通知</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<div class="news-img"><img src="img/news-img/news-parMess.png"/></div>
+							<div class="news-txt">家长留言</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<div class="news-img"><img src="img/news-img/news-stuMess.png"/></div>
+							<div class="news-txt">学生留言</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div style="height: .2rem;background: #f3f3f3;"></div>
+			<div id="list-box">
+				<!--通知-->
+				<div class="news-main list" style="display: block;">
+					<div class="news-row clearfix">
+						<a href="notice.html">
+							<div class="clearfix">
+								<div class="news-row-left fl">
+									<h2>关于清明节和劳动节的放假通知</h2>
+								</div>
+								<div class="news-row-right fr">
+									2018-05-31
+								</div>
+							</div>
+							<p>创意星球(北京)<span class="news-prompt fr"></span></p>
+						</a>
+					</div>
+					<div class="news-row clearfix">
+						<a href="notice.html">
+							<div class="clearfix">
+								<div class="news-row-left fl">
+									<h2>关于清明节和劳动节的放假通知</h2>
+								</div>
+								<div class="news-row-right fr">
+									2018-05-31
+								</div>
+							</div>
+							<p>创意星球(北京)<span class="news-prompt fr"></span></p>
+						</a>
+					</div>
+					<div class="news-row clearfix">
+						<a href="notice.html">
+							<div class="clearfix">
+								<div class="news-row-left fl">
+									<h2>关于清明节和劳动节的放假通知</h2>
+								</div>
+								<div class="news-row-right fr">
+									2018-05-31
+								</div>
+							</div>
+							<p>创意星球(北京)<!--<span class="news-prompt fr"></span>--></p>
+						</a>
+					</div>
+				</div>
+				
+				<!--家长留言-->
+				<div class="parMess list">
+					<div class="parMess-row clearfix" id="chat">
+						<a href="page-chat.html" class="clearfix news-win">
+							<div class="portrait-img fl">
+								<img src="img/news-img/parMess01.png"/>
+							</div>
+							<div class="parMess-info fr">
+								<div class="info clearfix">
+									<div class="name fl">
+										张三
+									</div>
+									<div class="time fr">
+										2018-05-31
+									</div>
+								</div>
+								<p class="info-txt">请老师严加管教<span class="news-prompt fr"></span></p>
+							</div>
+						</a>
+						<a href="page-chat.html" class="clearfix news-win">
+							<div class="portrait-img fl">
+								<img src="img/news-img/parMess02.png"/>
+							</div>
+							<div class="parMess-info fr">
+								<div class="info clearfix">
+									<div class="name fl">
+										张三
+									</div>
+									<div class="time fr">
+										2018-05-31
+									</div>
+								</div>
+								<p class="info-txt">请老师严加管教<span class="news-prompt fr"></span></p>
+							</div>
+						</a>
+						<a href="page-chat.html" class="clearfix news-win">
+							<div class="portrait-img fl">
+								<img src="img/news-img/parMess03.png"/>
+							</div>
+							<div class="parMess-info fr">
+								<div class="info clearfix">
+									<div class="name fl">
+										张三
+									</div>
+									<div class="time fr">
+										2018-05-31
+									</div>
+								</div>
+								<p class="info-txt">请老师严加管教<span class="news-prompt fr"></span></p>
+							</div>
+						</a>
+						<a href="page-chat.html" class="clearfix news-win">
+							<div class="portrait-img fl">
+								<img src="img/news-img/parMess04.png"/>
+							</div>
+							<div class="parMess-info fr">
+								<div class="info clearfix">
+									<div class="name fl">
+										张三
+									</div>
+									<div class="time fr">
+										2018-05-31
+									</div>
+								</div>
+								<p class="info-txt">请老师严加管教<!--<span class="news-prompt fr"></span>--></p>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<!--学生留言-->
+				<div class="list"></div>
+			</div>
+			<script type="text/javascript">
+				window.onload = function(){
+					var cLi = document.getElementById('tabs').getElementsByTagName('li');
+					var cList = document.getElementById('list-box').getElementsByClassName('list');
+					
+					for(var i=0 ;i<cLi.length;i++){
+						cLi[i].index=i;
+						cLi[i].onclick = function(){
+							for(var i=0;i<cLi.length;i++){
+								cList[i].style.display = 'none';
+							}
+							cList[this.index].style.display = 'block';
+						}
+					}
+				}	
+			</script>
+			
+			
+			<div style="height: 1.2rem;"></div>
+			<div class="footer clearfix">
+				<ul>
+					<li><a href="index.html"><div class="ico-img"><img src="img/footer-img/footer-index01.png"/></div><p class="ico-txt">首页</p></a></li>
+					<li><a href="page-news.html"><div class="ico-img"><img src="img/footer-img/footer-info02.png"/></div><p class="ico-txt">消息</p></a></li>
+					<li class="footer-more"><a href=""><div class="ico-img"><img src="img/footer-img/footer-more.png"/></div></a></li>
+					<li><a href="pagr-school.html"><div class="ico-img"><img src="img/footer-img/footer-school01.png"/></div><p class="ico-txt">学校</p></a></li>
+					<li><a href="page-my.html"><div class="ico-img"><img src="img/footer-img/footer-my01.png"/></div><p class="ico-txt">我的</p></a></li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<script src="js/phone.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
